@@ -1,0 +1,59 @@
+h1 {
+    color: rgb(45, 45, 45);
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-shadow: 1px 2px rgb(130, 130, 130);
+    font-size: 2.5rem;
+    padding-bottom: 2%;
+}
+      
+/* toggle in label designing */
+.toggle {
+    position : relative ;
+    display : inline-block;
+    width : 100px;
+    height : 52px;
+    background-color: rgb(251, 249, 249);
+    border-radius: 30px;
+    border: 2px solid gray;
+}
+      
+/* After slide changes */
+.toggle:after {
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: gray;
+    top: 1px; 
+    left: 1px;
+    transition: all 0.5s;
+}
+
+b {
+    font-size: 1.3rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:rgb(82, 82, 82);
+}
+      
+p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+}
+      
+.checkbox:checked + .toggle::after {
+    left : 49px; 
+}
+      
+.checkbox:checked + .toggle {
+    background-color: rgb(252, 253, 252);
+}
+      
+.checkbox { 
+    display : none;
+}
+
+.tog {
+    margin: 2%;
+}
